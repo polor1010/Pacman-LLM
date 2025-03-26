@@ -25,7 +25,7 @@ def GhostController(data):
     with open(file_path, "r", encoding="utf-8") as file:
         content = file.read() 
     
-    client = genai.Client(api_key='AIzaSyDXGP0MMnLgSas55x97MC3K80P4yX4YvFk')
+    client = genai.Client(api_key='')
     filled_content = content.format(**data)
 
     #print(filled_content)
